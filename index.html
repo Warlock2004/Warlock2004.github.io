@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0bc37d17a2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="side-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Kalindu <span>Himasara</span></h1>
+            <p>Hi, I'm a Security Analyst from Sri Lanka </p>
+        </div>
+    </div>
+ </div> 
+ <!-----------------------------------About-------------------------------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1 fade-in-section" >
+                <img src="Images/user.png" data-aos="fade-in">
+            </div>
+            <div class="about-col-2 fade-in-section" data-aos="fade-up">
+                <h1 class="sub-title">About <span>Me </span></h1>
+                <p class="about-description">
+                    Hi, I am Kalindu, a Security Analyst focused on safeguarding 
+                    organizations from cyber threats.
+                    With expertise in vulnerability management, risk assessment, and incident response,
+                    I am dedicated to keeping digital environments secure. 
+                    I am always eager to learn and stay ahead of emerging threats.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links " onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Network Security</span><br>Monitoring, securing, and analyzing network traffic to detect and respond to threats.</li>
+                        <li><span>Vulnerability Assessment</span><br>Conducting scans to identify vulnerabilities using tools like Nessus, OpenVAS, or Qualys.</li>
+                        <li><span>Penetration Testing</span><br>Performing simulated attacks to evaluate security, using tools like Metasploit, Burp Suite, and Nmap.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>2021 - 2022</span><br>Cybersecurity Intern at ABC Corp.</li>
+                        <li><span>2022 - 2023</span><br> Security Analyst at XYZ Tech Solutions</li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="education">
+                    <ul>
+                        <li><span>2022</span><br>Bachelor of Science in Cybersecurity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-----------------------------------Services-------------------------------->
+<div id="services">
+    <div class="container fade-in-section">
+        <h1 class="sub-title">My <span>Services </span></h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h2>Vulnerability Assessment</h2>
+                <p>Comprehensive vulnerability scanning of networks, applications, and systems to identify and prioritize potential security weaknesses.</p>
+                <a href="#">Learn More</a>
+            </div>  
+            <div>
+                <i class="fa-solid fa-bug"></i>
+                <h2>Penetration Testing</h2>
+                <p>Simulated attacks on web applications, networks, and systems to assess their resilience against real-world threats.</p>
+                <a href="#">Learn More</a>
+            </div>  
+            <div>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h2>Incident Response and Recovery</h2>
+                <p>Rapid response and support during security incidents, minimizing damage and assisting with containment, eradication, and recovery. </p>
+                <a href="#">Learn More</a>
+            </div>  
+        </div>
+    </div>
+
+</div>
+
+<!---------------------------------------Portfolio------------------------------------->
+
+<div id="portfolio">
+    <div class="container fade-in-section">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/pentesting.png" >
+                <div class="layer">
+                    <h3>Penetration Testing for RetailHub Online</h3>
+                    <p>Conducted a comprehensive penetration test on the client’s e-commerce platform to identify vulnerabilities and enhance customer data protection.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/vulnerability-assessment.png" >
+                <div class="layer">
+                    <h3>Vulnerability Assessment for MedSecure Health</h3>
+                    <p> Performed a vulnerability assessment on the healthcare provider’s network and systems to ensure patient data security and compliance with HIPAA regulations.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/cloud-security.png" >
+                <div class="layer">
+                    <h3>Cloud Security Configuration for TechLift Start-Up</h3>
+                    <p>Secured the company’s AWS cloud environment as they transitioned critical data and applications to the cloud.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------------------------------Contact------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kalindu.himasara.503"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/HimasaraKalindu"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/kalindu04"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kalindu-himasara-weerakkody"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    //fade-in-section animation
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
+
+    function handleScroll() {
+        const sections = document.querySelectorAll('.fade-in-section');
+        sections.forEach(section => {
+            if (isInViewport(section)) {
+                section.classList.add('visible');
+            }
+        });
+    }
+    window.addEventListener('scroll', handleScroll);
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById("side-menu")
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrEg7Qd6EfVoruFbq9zi-ntNelTcDLpAJhVo8-hyAUyHUmZlQgxjqtRcm-BqW0IBWizg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
